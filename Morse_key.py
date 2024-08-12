@@ -1,4 +1,4 @@
-# Morseova abeceda slovník
+# Morse code dictionary
 MORSE_CODE_DICT = {
     '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F',
     '--.': 'G', '....': 'H', '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L',
@@ -10,7 +10,7 @@ MORSE_CODE_DICT = {
 }
 
 def morse_to_text(morse_code):
-    # Rozdělení morseovky na jednotlivé znaky
+    # Splitting morse code into individual characters
     morse_words = morse_code.split('   ')
     decoded_message = ''
     
@@ -22,6 +22,6 @@ def morse_to_text(morse_code):
     
     return decoded_message.strip()
 
-# Příklad použití
-morse_input = input
+# Usage example
+morse_input = '... --- ...'
 print(morse_to_text(morse_input))
